@@ -1,0 +1,11 @@
+option go_package = "./data";
+
+service Time {
+  rpc Now(NowRequest) returns (NowResponse) {}
+}
+
+message NowRequest {}
+
+message NowResponse {
+  required int64 message = 1;
+}
